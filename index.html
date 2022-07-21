@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Box Model</title>
+<style>
+* {
+  box-sizing: border-box;
+  padding-right: 1px;
+
+}
+h1 {
+  margin-bottom: 15px;
+}
+
+.row {
+  width: 100%;
+}
+
+.c {
+    
+   /*  margin: 3%;*/
+   float: right;
+   width: 25%;
+    height: 25%;
+    background: pink;
+    color: black;
+}
+
+.d {
+  
+   /*  margin: 3%;*/
+   float: right;
+   width: 25%;
+    height: 25%;
+    background: darkred;
+    color: white;
+}
+.e {
+   
+   
+   /*  margin: 3%;*/
+   float: right;
+   width: 25%;
+    height: 25%;
+    background: lightyellow;
+    color: black;
+}
+
+.b {
+    display: inline-block;
+    position: relative;
+    margin: 20px;
+ 
+    width: 100%;
+    background-color: darkgrey;
+    border: 3px solid black;
+   color: black;
+}
+
+
+h2 {
+   margin: 3%;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  
+  .b {
+    width: 30%;
+  }
+ 
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+ 
+  .b {
+    width: 30%;
+  }
+  
+}
+p{
+  padding-top: 5px;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Our Menu</h2>
+<div class="row">
+<div class="b">
+<div class ="c" align="center">Chicken</div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione earum dolores nihil! Consequuntur pariatur totam incidunt soluta expedita.</p></div>
+<div class="b">
+<div class ="d" align="center">Beef</div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione earum dolores nihil! Consequuntur pariatur totam incidunt soluta expedita.</p></div>
+<div class="b">
+<div class ="e" align="center">Sushi</div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione earum dolores nihil! Consequuntur pariatur totam incidunt soluta expedita.</p></div>
+</div>
+</body>
+</html>
